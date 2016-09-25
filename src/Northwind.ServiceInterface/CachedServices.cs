@@ -3,34 +3,16 @@ using ServiceStack;
 
 namespace Northwind.ServiceInterface
 {
+    [CacheResponse(Duration = 60 * 60, MaxAge = 30 * 60)]
     public class CachedServices : Service
     {
-        public object Get(CachedCustomers request)
-        {
-            return base.Request.ToOptimizedResultUsingCache(this.Cache, 
-                "urn:customers", () =>
-                    this.ResolveService<CustomersService>()
-                    .Get(new Customers()));
-        }
+        public object Get(CachedCustomers request) => 
+            Gateway.Send(new Customers());
 
-        public object Get(CachedCustomerDetails request)
-        {
-            var cacheKey = UrnId.Create<CustomerDetails>(request.Id);
+        public object Get(CachedCustomerDetails request) => 
+            Gateway.Send(new CustomerDetails { Id = request.Id });
 
-            return base.Request.ToOptimizedResultUsingCache(this.Cache, 
-                cacheKey, () =>
-                    this.ResolveService<CustomerDetailsService>()
-                    .Get(new CustomerDetails { Id = request.Id }));
-        }
-
-        public object Get(CachedOrders request)
-        {
-            var cacheKey = UrnId.Create<Orders>(request.CustomerId ?? "all", request.Page.GetValueOrDefault(0).ToString());
-
-            return base.Request.ToOptimizedResultUsingCache(Cache, 
-                cacheKey, () => 
-                    this.ResolveService<OrdersService>()
-                    .Get(new Orders { CustomerId = request.CustomerId, Page = request.Page }));
-        }
+        public object Get(CachedOrders request) => 
+            Gateway.Send(new Orders { CustomerId = request.CustomerId, Page = request.Page });
     }
 }

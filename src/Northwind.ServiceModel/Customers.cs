@@ -7,9 +7,7 @@ namespace Northwind.ServiceModel
 {
     [DataContract]
     [Route("/customers")]
-    public class Customers
-    {
-    }
+    public class Customers : IReturn<CustomersResponse> {}
 
     [DataContract]
     public class CustomersResponse : IHasResponseStatus

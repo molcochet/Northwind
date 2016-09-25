@@ -7,7 +7,7 @@ namespace Northwind.ServiceModel
 {
     [DataContract]
     [Route("/customers/{Id}")]
-    public class CustomerDetails
+    public class CustomerDetails : IReturn<CustomerDetailsResponse>
     {
         [DataMember]
         public string Id { get; set; }
