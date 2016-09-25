@@ -184,12 +184,12 @@
     <h3>Supporting the VCard Format in ServiceStack</h3>
     <p>
         Like the
-        <a href="https://github.com/ServiceStack/ServiceStack/wiki/HTML5ReportFormat">HTML</a> and
-        <a href="https://github.com/ServiceStack/ServiceStack/wiki/ServiceStack-CSV-Format">CSV</a>
+        <a href="http://docs.servicestack.net/html5reportformat.html">HTML</a> and
+        <a href="http://docs.servicestack.net/csv-format.html">CSV</a>
         formats before it, the best way to add an additional Media Type in ServiceStack is to encapsulate it in a single
         class keeping it loosely-coupled from the rest of your system thus making it an easy drop-in or removal whenever you need it.
         The entire support for the format is contained in
-        <b><a href="https://github.com/ServiceStackApps/Northwind/blob/master/src/Northwind/Northwind.ServiceInterface/VCardFormat.cs">VCardFormat.cs</a></b>
+        <b><a href="https://github.com/NetCoreApps/Northwind/blob/master/src/Northwind.ServiceInterface/VCardFormat.cs">VCardFormat.cs</a></b>
         and is explained below:
     </p>
 
@@ -207,7 +207,7 @@
 
     <ul>
         <li>REST URL overridng response format using the QueryString: <a href="customers/ALFKI?format=x-vcard">/customers/ALFKI?format=x-vcard</a></li>
-        <li>Auto generated format url: <a href="x-vcard/syncreply/customers/ALFKI">/x-vcard/syncreply/customers/ALFKI</a></li>
+        <li>Auto generated format url: <a href="x-vcard/reply/customers/ALFKI">/x-vcard/reply/customers/ALFKI</a></li>
         <li>Using the <b>Accept: text/x-vcard</b> HTTP header at the REST URL: <a href="customers/ALFKI">/customers/ALFKI</a></li>
     </ul>
 
