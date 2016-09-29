@@ -973,12 +973,40 @@
           }
         }
       },
-      "ServiceStack.Client.Core/1.0.15": {
+      "ServiceStack.Admin.Core/1.0.16": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Client.Core": "1.0.16",
+          "ServiceStack.Common.Core": "1.0.16",
+          "ServiceStack.Core": "1.0.16",
+          "ServiceStack.Interfaces.Core": "1.0.16",
+          "ServiceStack.OrmLite.Core": "1.0.16",
+          "ServiceStack.Redis.Core": "1.0.16",
+          "ServiceStack.Server.Core": "1.0.16",
+          "ServiceStack.Text.Core": "1.0.16",
+          "System.Collections.Specialized": "4.0.1",
+          "System.Linq.Queryable": "4.0.1",
+          "System.Runtime.Serialization.Primitives": "4.1.1",
+          "System.ServiceModel.Primitives": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Threading.ThreadPool": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.6/ServiceStack.Admin.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/ServiceStack.Admin.dll": {}
+        }
+      },
+      "ServiceStack.Client.Core/1.0.16": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "ServiceStack.Interfaces.Core": "1.0.15",
-          "ServiceStack.Text.Core": "1.0.15",
+          "ServiceStack.Interfaces.Core": "1.0.16",
+          "ServiceStack.Text.Core": "1.0.16",
           "System.Collections.Specialized": "4.0.1",
           "System.Net.Requests": "4.0.11",
           "System.ServiceModel.Primitives": "4.1.0",
@@ -991,12 +1019,12 @@
           "lib/netstandard1.6/ServiceStack.Client.dll": {}
         }
       },
-      "ServiceStack.Common.Core/1.0.15": {
+      "ServiceStack.Common.Core/1.0.16": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "ServiceStack.Interfaces.Core": "1.0.15",
-          "ServiceStack.Text.Core": "1.0.15",
+          "ServiceStack.Interfaces.Core": "1.0.16",
+          "ServiceStack.Text.Core": "1.0.16",
           "System.ComponentModel.Primitives": "4.1.0",
           "System.Data.Common": "4.1.0",
           "System.Dynamic.Runtime": "4.0.11",
@@ -1010,7 +1038,7 @@
           "lib/netstandard1.3/ServiceStack.Common.dll": {}
         }
       },
-      "ServiceStack.Core/1.0.15": {
+      "ServiceStack.Core/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "1.0.0",
@@ -1019,10 +1047,10 @@
           "Microsoft.AspNetCore.Http.Extensions": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
-          "ServiceStack.Client.Core": "1.0.15",
-          "ServiceStack.Common.Core": "1.0.15",
-          "ServiceStack.Interfaces.Core": "1.0.15",
-          "ServiceStack.Text.Core": "1.0.15",
+          "ServiceStack.Client.Core": "1.0.16",
+          "ServiceStack.Common.Core": "1.0.16",
+          "ServiceStack.Interfaces.Core": "1.0.16",
+          "ServiceStack.Text.Core": "1.0.16",
           "System.Collections.Specialized": "4.0.1",
           "System.ComponentModel.Primitives": "4.1.0",
           "System.Data.Common": "4.1.0",
@@ -1049,7 +1077,7 @@
           "lib/netstandard1.6/ServiceStack.dll": {}
         }
       },
-      "ServiceStack.Interfaces.Core/1.0.15": {
+      "ServiceStack.Interfaces.Core/1.0.16": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -1063,12 +1091,12 @@
           "lib/netstandard1.1/ServiceStack.Interfaces.dll": {}
         }
       },
-      "ServiceStack.OrmLite.Core/1.0.15": {
+      "ServiceStack.OrmLite.Core/1.0.16": {
         "type": "package",
         "dependencies": {
-          "ServiceStack.Common.Core": "1.0.15",
-          "ServiceStack.Interfaces.Core": "1.0.15",
-          "ServiceStack.Text.Core": "1.0.15",
+          "ServiceStack.Common.Core": "1.0.16",
+          "ServiceStack.Interfaces.Core": "1.0.16",
+          "ServiceStack.Text.Core": "1.0.16",
           "System.Collections.NonGeneric": "4.0.1",
           "System.ComponentModel.Annotations": "4.1.0",
           "System.ComponentModel.Primitives": "4.1.0",
@@ -1088,14 +1116,14 @@
           "lib/netstandard1.3/ServiceStack.OrmLite.dll": {}
         }
       },
-      "ServiceStack.OrmLite.Sqlite.Core/1.0.15": {
+      "ServiceStack.OrmLite.Sqlite.Core/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.SQLite": "1.0.0",
-          "ServiceStack.Common.Core": "1.0.15",
-          "ServiceStack.Interfaces.Core": "1.0.15",
-          "ServiceStack.OrmLite.Core": "1.0.15",
-          "ServiceStack.Text.Core": "1.0.15"
+          "ServiceStack.Common.Core": "1.0.16",
+          "ServiceStack.Interfaces.Core": "1.0.16",
+          "ServiceStack.OrmLite.Core": "1.0.16",
+          "ServiceStack.Text.Core": "1.0.16"
         },
         "compile": {
           "lib/netstandard1.3/ServiceStack.OrmLite.Sqlite.dll": {}
@@ -1104,13 +1132,13 @@
           "lib/netstandard1.3/ServiceStack.OrmLite.Sqlite.dll": {}
         }
       },
-      "ServiceStack.Redis.Core/1.0.15": {
+      "ServiceStack.Redis.Core/1.0.16": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "ServiceStack.Common.Core": "1.0.15",
-          "ServiceStack.Interfaces.Core": "1.0.15",
-          "ServiceStack.Text.Core": "1.0.15",
+          "ServiceStack.Common.Core": "1.0.16",
+          "ServiceStack.Interfaces.Core": "1.0.16",
+          "ServiceStack.Text.Core": "1.0.16",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
           "System.Net.NameResolution": "4.0.0",
@@ -1123,7 +1151,7 @@
           "lib/netstandard1.3/ServiceStack.Redis.dll": {}
         }
       },
-      "ServiceStack.Server.Core/1.0.15": {
+      "ServiceStack.Server.Core/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "1.0.0",
@@ -1132,13 +1160,13 @@
           "Microsoft.AspNetCore.Http.Extensions": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
-          "ServiceStack.Client.Core": "1.0.15",
-          "ServiceStack.Common.Core": "1.0.15",
-          "ServiceStack.Core": "1.0.15",
-          "ServiceStack.Interfaces.Core": "1.0.15",
-          "ServiceStack.OrmLite.Core": "1.0.15",
-          "ServiceStack.Redis.Core": "1.0.15",
-          "ServiceStack.Text.Core": "1.0.15",
+          "ServiceStack.Client.Core": "1.0.16",
+          "ServiceStack.Common.Core": "1.0.16",
+          "ServiceStack.Core": "1.0.16",
+          "ServiceStack.Interfaces.Core": "1.0.16",
+          "ServiceStack.OrmLite.Core": "1.0.16",
+          "ServiceStack.Redis.Core": "1.0.16",
+          "ServiceStack.Text.Core": "1.0.16",
           "System.Collections.Specialized": "4.0.1",
           "System.ComponentModel.Primitives": "4.1.0",
           "System.Data.Common": "4.1.0",
@@ -1165,7 +1193,7 @@
           "lib/netstandard1.6/ServiceStack.Server.dll": {}
         }
       },
-      "ServiceStack.Text.Core/1.0.15": {
+      "ServiceStack.Text.Core/1.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
@@ -4300,12 +4328,24 @@
         "runtimes/win7-x86/native/sni.dll"
       ]
     },
-    "ServiceStack.Client.Core/1.0.15": {
-      "sha512": "zA1cH48+8O4MlSWxW5lSmK9UO0aaVAYmadJKe5jxh6e233h+EHdkJTjQEOyNIAiiNqE3QU76M2ejX6rhD05TEQ==",
+    "ServiceStack.Admin.Core/1.0.16": {
+      "sha512": "l2ibtwvroZyFy5/uIpxn6luolBV7+ULvKCm5FEX8bYMjlkgqRQ1YtDZKYDwgJ9kwl2HATkhC1jL/vzjbsv943g==",
       "type": "package",
-      "path": "ServiceStack.Client.Core/1.0.15",
+      "path": "ServiceStack.Admin.Core/1.0.16",
       "files": [
-        "ServiceStack.Client.Core.1.0.15.nupkg.sha512",
+        "ServiceStack.Admin.Core.1.0.16.nupkg.sha512",
+        "ServiceStack.Admin.Core.nuspec",
+        "lib/netstandard1.6/ServiceStack.Admin.deps.json",
+        "lib/netstandard1.6/ServiceStack.Admin.dll",
+        "lib/netstandard1.6/ServiceStack.Admin.pdb"
+      ]
+    },
+    "ServiceStack.Client.Core/1.0.16": {
+      "sha512": "UeCFnyWLDPOeCYLKjUXnZGr0xzz8OF8I8SX6mrgMCAWRnH67ZuEQ9P6RXm1OQdJaQk0EQNGukW788waYLI8Hwg==",
+      "type": "package",
+      "path": "ServiceStack.Client.Core/1.0.16",
+      "files": [
+        "ServiceStack.Client.Core.1.0.16.nupkg.sha512",
         "ServiceStack.Client.Core.nuspec",
         "lib/netstandard1.1/ServiceStack.Client.deps.json",
         "lib/netstandard1.1/ServiceStack.Client.dll",
@@ -4315,94 +4355,94 @@
         "lib/netstandard1.6/ServiceStack.Client.pdb"
       ]
     },
-    "ServiceStack.Common.Core/1.0.15": {
-      "sha512": "fxjgsflq3eznoE9ePDojQNtdyJ3pyWYwnLDUROgUcno/tYdOIVvPJVqY/vTfEVPbAHr/wzGiC+ytJJMo8ZvtFQ==",
+    "ServiceStack.Common.Core/1.0.16": {
+      "sha512": "9CJS7M3mkaymc9PNeqLo2Vu5LP9qUzRJZd6AAlSjApKU9N7t9b7R2FGFFk5NW+CSEc8Q1vrJ8mNgdyP+b7QRdw==",
       "type": "package",
-      "path": "ServiceStack.Common.Core/1.0.15",
+      "path": "ServiceStack.Common.Core/1.0.16",
       "files": [
-        "ServiceStack.Common.Core.1.0.15.nupkg.sha512",
+        "ServiceStack.Common.Core.1.0.16.nupkg.sha512",
         "ServiceStack.Common.Core.nuspec",
         "lib/netstandard1.3/ServiceStack.Common.deps.json",
         "lib/netstandard1.3/ServiceStack.Common.dll",
         "lib/netstandard1.3/ServiceStack.Common.pdb"
       ]
     },
-    "ServiceStack.Core/1.0.15": {
-      "sha512": "67Cmmi9EaWrapzzZFhjpo0oHDUxM2j2vBig4j/xHjqvDw3zoF0dObt1cvHtPw6CrxUissrpYNpXWp21AzGd6vQ==",
+    "ServiceStack.Core/1.0.16": {
+      "sha512": "2ttMd2E08ediPDptDmrMd0WEf+F0JexCJlui+kqlfw81bA2lKbFQQaWzq8JzBpkoLIZxbJ13x3adwYulADFm2g==",
       "type": "package",
-      "path": "ServiceStack.Core/1.0.15",
+      "path": "ServiceStack.Core/1.0.16",
       "files": [
-        "ServiceStack.Core.1.0.15.nupkg.sha512",
+        "ServiceStack.Core.1.0.16.nupkg.sha512",
         "ServiceStack.Core.nuspec",
         "lib/netstandard1.6/ServiceStack.deps.json",
         "lib/netstandard1.6/ServiceStack.dll",
         "lib/netstandard1.6/ServiceStack.pdb"
       ]
     },
-    "ServiceStack.Interfaces.Core/1.0.15": {
-      "sha512": "wRfvIqO7XiQH66ov5PnUlmH5wjFw9VnRPw1FyUzB6aTxAiD4AEwLWyd+SHHTszMyKFHsqXG9/yLK5MqGPLbEtg==",
+    "ServiceStack.Interfaces.Core/1.0.16": {
+      "sha512": "9GjzeMvdjv/M71p321VbrkxrZCQjM8U7GtpLJjYL3uC2aJ8vILaiNE1RTb3+BS3HqHOlwEGpQpAoFhRx3S7X5g==",
       "type": "package",
-      "path": "ServiceStack.Interfaces.Core/1.0.15",
+      "path": "ServiceStack.Interfaces.Core/1.0.16",
       "files": [
-        "ServiceStack.Interfaces.Core.1.0.15.nupkg.sha512",
+        "ServiceStack.Interfaces.Core.1.0.16.nupkg.sha512",
         "ServiceStack.Interfaces.Core.nuspec",
         "lib/netstandard1.1/ServiceStack.Interfaces.dll",
         "lib/netstandard1.1/ServiceStack.Interfaces.pdb"
       ]
     },
-    "ServiceStack.OrmLite.Core/1.0.15": {
-      "sha512": "ZLopNfdfmrC5kKUKiLTKc/C4mNVw7VXPSQ+FfCthz8OjrLcavOfOYUMZkgv/kHBXnNZFlOgnGYTifqOmfz/dSg==",
+    "ServiceStack.OrmLite.Core/1.0.16": {
+      "sha512": "gYO9g++QdIaW9JbVUZN4zt/q450erq4ZzDc3EjZjyUNupYRCm+Gt5cCyBhzPMmEK3vBQtU0lgDYi91xp8xiZsg==",
       "type": "package",
-      "path": "ServiceStack.OrmLite.Core/1.0.15",
+      "path": "ServiceStack.OrmLite.Core/1.0.16",
       "files": [
-        "ServiceStack.OrmLite.Core.1.0.15.nupkg.sha512",
+        "ServiceStack.OrmLite.Core.1.0.16.nupkg.sha512",
         "ServiceStack.OrmLite.Core.nuspec",
         "lib/netstandard1.3/ServiceStack.OrmLite.dll",
         "lib/netstandard1.3/ServiceStack.OrmLite.pdb"
       ]
     },
-    "ServiceStack.OrmLite.Sqlite.Core/1.0.15": {
-      "sha512": "etrshxIANtKORLvdyrlGiddjmU9fdi7WKUcJ06lRlwEkTyapnquHTf7STb1VI4u53VbGHTzNLpfYALxiSMu/QQ==",
+    "ServiceStack.OrmLite.Sqlite.Core/1.0.16": {
+      "sha512": "OraARk+4APCkDOVJIk16kbU7Cp+/qJQOxBIJjPmpBwdrDxsdbhk2JPt4giz+rRWLo8Lqr+faJqzemWH6nxE21Q==",
       "type": "package",
-      "path": "ServiceStack.OrmLite.Sqlite.Core/1.0.15",
+      "path": "ServiceStack.OrmLite.Sqlite.Core/1.0.16",
       "files": [
-        "ServiceStack.OrmLite.Sqlite.Core.1.0.15.nupkg.sha512",
+        "ServiceStack.OrmLite.Sqlite.Core.1.0.16.nupkg.sha512",
         "ServiceStack.OrmLite.Sqlite.Core.nuspec",
         "lib/netstandard1.3/ServiceStack.OrmLite.Sqlite.deps.json",
         "lib/netstandard1.3/ServiceStack.OrmLite.Sqlite.dll",
         "lib/netstandard1.3/ServiceStack.OrmLite.Sqlite.pdb"
       ]
     },
-    "ServiceStack.Redis.Core/1.0.15": {
-      "sha512": "7bFBm9e8qFa7VKhGDxsSbrpBw6e+8751JrsZWExdwcCZFdEWrbd7kKcdLMpYs+OKuAIYCjZ9Treo1XfTWp6P8g==",
+    "ServiceStack.Redis.Core/1.0.16": {
+      "sha512": "UT9D6RmXx0jv/D1Qz9Sc5EFwQ98PXMSVoI80Yf3uflPnMjYwyr6bi9VpwVgn4J4LzIlJj4oRuAoqjs7bnu4IfA==",
       "type": "package",
-      "path": "ServiceStack.Redis.Core/1.0.15",
+      "path": "ServiceStack.Redis.Core/1.0.16",
       "files": [
-        "ServiceStack.Redis.Core.1.0.15.nupkg.sha512",
+        "ServiceStack.Redis.Core.1.0.16.nupkg.sha512",
         "ServiceStack.Redis.Core.nuspec",
         "lib/netstandard1.3/ServiceStack.Redis.deps.json",
         "lib/netstandard1.3/ServiceStack.Redis.dll",
         "lib/netstandard1.3/ServiceStack.Redis.pdb"
       ]
     },
-    "ServiceStack.Server.Core/1.0.15": {
-      "sha512": "g2KCtfEv8+3ZIcyAQCWAgPzO7y3rEQH7njDLKOYFR4NJgQXcOoOZIFnMlfg16JQS+05rvb8xYkmi/6UPizDn0Q==",
+    "ServiceStack.Server.Core/1.0.16": {
+      "sha512": "kwgWRBz7gBrEv6DXxbmwhZPUcJmB1EXfub/m1Um4twIX9bmT0rV7g3NstodbrZFeGjn8vdogmRjg/Rm2krb5Hg==",
       "type": "package",
-      "path": "ServiceStack.Server.Core/1.0.15",
+      "path": "ServiceStack.Server.Core/1.0.16",
       "files": [
-        "ServiceStack.Server.Core.1.0.15.nupkg.sha512",
+        "ServiceStack.Server.Core.1.0.16.nupkg.sha512",
         "ServiceStack.Server.Core.nuspec",
         "lib/netstandard1.6/ServiceStack.Server.deps.json",
         "lib/netstandard1.6/ServiceStack.Server.dll",
         "lib/netstandard1.6/ServiceStack.Server.pdb"
       ]
     },
-    "ServiceStack.Text.Core/1.0.15": {
-      "sha512": "W5GTVgOkhxgds84ibcEHBsi8Plw4EhX/olUnKHdfXqFFZW2PSmmbBMjCZgJn3N+p2C2hrXzuH+dQmsC5y9fKrg==",
+    "ServiceStack.Text.Core/1.0.16": {
+      "sha512": "fdA2wuz2HAfVohDVWaqGPkKByAuz/BJ/i3LImVwacIi2yyB96/aXoay6gJpyVC0Ayz+rAGyRYe36xNkGkEtASA==",
       "type": "package",
-      "path": "ServiceStack.Text.Core/1.0.15",
+      "path": "ServiceStack.Text.Core/1.0.16",
       "files": [
-        "ServiceStack.Text.Core.1.0.15.nupkg.sha512",
+        "ServiceStack.Text.Core.1.0.16.nupkg.sha512",
         "ServiceStack.Text.Core.nuspec",
         "lib/netstandard1.1/ServiceStack.Text.deps.json",
         "lib/netstandard1.1/ServiceStack.Text.dll",
@@ -9468,6 +9508,7 @@
       "Microsoft.NETCore.App >= 1.0.1",
       "Northwind.ServiceInterface >= 1.0.0-*",
       "Northwind.ServiceModel >= 1.0.0-*",
+      "ServiceStack.Admin.Core >= 1.0.*",
       "ServiceStack.Client.Core >= 1.0.*",
       "ServiceStack.Common.Core >= 1.0.*",
       "ServiceStack.Core >= 1.0.*",

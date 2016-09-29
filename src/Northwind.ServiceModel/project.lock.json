@@ -133,7 +133,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "ServiceStack.Interfaces.Core/1.0.15": {
+      "ServiceStack.Interfaces.Core/1.0.16": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -1219,12 +1219,12 @@
         "runtime.native.System.Security.Cryptography.nuspec"
       ]
     },
-    "ServiceStack.Interfaces.Core/1.0.15": {
-      "sha512": "wRfvIqO7XiQH66ov5PnUlmH5wjFw9VnRPw1FyUzB6aTxAiD4AEwLWyd+SHHTszMyKFHsqXG9/yLK5MqGPLbEtg==",
+    "ServiceStack.Interfaces.Core/1.0.16": {
+      "sha512": "9GjzeMvdjv/M71p321VbrkxrZCQjM8U7GtpLJjYL3uC2aJ8vILaiNE1RTb3+BS3HqHOlwEGpQpAoFhRx3S7X5g==",
       "type": "package",
-      "path": "ServiceStack.Interfaces.Core/1.0.15",
+      "path": "ServiceStack.Interfaces.Core/1.0.16",
       "files": [
-        "ServiceStack.Interfaces.Core.1.0.15.nupkg.sha512",
+        "ServiceStack.Interfaces.Core.1.0.16.nupkg.sha512",
         "ServiceStack.Interfaces.Core.nuspec",
         "lib/netstandard1.1/ServiceStack.Interfaces.dll",
         "lib/netstandard1.1/ServiceStack.Interfaces.pdb"
