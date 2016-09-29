@@ -5,4 +5,5 @@ RUN ["dotnet", "restore"]
 WORKDIR /app/Northwind
 RUN ["dotnet", "build"]
 EXPOSE 5001/tcp
-ENTRYPOINT ["dotnet", "run", "--server.urls", "http://0.0.0.0:5001"]
+ENV ASPNETCORE_URLS https://*:5001
+ENTRYPOINT ["dotnet", "run", "--server.urls", "http://*:5001"]
