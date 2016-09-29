@@ -1,5 +1,5 @@
 FROM microsoft/dotnet:latest
-COPY src/Northwind /app
+COPY src /app
 WORKDIR /app
 RUN ["dotnet", "restore"]
 RUN ["dotnet", "build"]
