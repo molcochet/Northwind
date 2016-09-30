@@ -54,7 +54,7 @@ namespace Northwind
             VCardFormat.Register(this);
 
             Plugins.Add(new AutoQueryFeature { MaxLimit = 100 });
-            //Plugins.Add(new AdminFeature());
+            Plugins.Add(new AdminFeature());
 
             Plugins.Add(new CorsFeature());
         }
