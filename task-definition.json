@@ -5,7 +5,7 @@
         {
             "image": "831181395254.dkr.ecr.ap-southeast-2.amazonaws.com/netcore-northwind:latest",
             "name": "netcoreapps-northwind-container",
-            "cpu": 10,
+            "cpu": 128,
             "memory": 256,
             "essential": true,
             "portMappings": [
