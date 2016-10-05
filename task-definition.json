@@ -1,16 +1,16 @@
 {
-    "family": "netcoreapps-northwind-task",
+    "family": "__ECS_TASK__",
     "networkMode": "host",
     "containerDefinitions": [
         {
-            "image": "831181395254.dkr.ecr.ap-southeast-2.amazonaws.com/netcore-northwind:latest",
-            "name": "netcoreapps-northwind-container",
+            "image": "__AWS_ECS_REPO_DOMAIN__/__IMAGE_NAME__:__IMAGE_VERSION__",
+            "name": "__IMAGE_NAME__-container",
             "cpu": 128,
             "memory": 256,
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": 5001,
+                    "containerPort": 5000,
                     "protocol": "tcp"
                 }
             ]
