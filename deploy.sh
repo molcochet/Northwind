@@ -1,18 +1,5 @@
 #!/bin/bash
-
-# install dependencies
-sudo apt-get install jq #install jq for json parsing
-pip install --user awscli # install aws cli w/o sudo
-export PATH=$PATH:$HOME/.local/bin # put aws in the path
-
-# Set variables
-IMAGE_NAME=netcore-northwind
-IMAGE_VERSION=latest
-ECS_SERVICE=netcoreapps-northwind-service
-ECS_TASK=netcoreapps-northwind-task
-AWS_DEFAULT_REGION=ap-southeast-2
-AWS_ECS_CLUSTER_NAME=default
-#AWS_ECS_REPO_DOMAIN={} set in private variable
+./set-envs.sh
 
 # Update task definition with env values
 sed "s/__ECS_TASK__/$ECS_TASK/g" -i ./task-definition.json
@@ -20,10 +7,12 @@ sed "s/__IMAGE_NAME__/$IMAGE_NAME/g" -i ./task-definition.json
 sed "s/__AWS_ECS_REPO_DOMAIN__/$AWS_ECS_REPO_DOMAIN/g" -i ./task-definition.json
 sed "s/__IMAGE_VERSION__/$IMAGE_VERSION/g" -i ./task-definition.json
 
-# Build/Deploy process
+# install dependencies
+sudo apt-get install jq #install jq for json parsing
+pip install --user awscli # install aws cli w/o sudo
+export PATH=$PATH:$HOME/.local/bin # put aws in the path
+
 eval $(aws ecr get-login --region $AWS_DEFAULT_REGION) #needs AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY envvars
-docker build -t $IMAGE_NAME .
-docker tag $IMAGE_NAME $AWS_ECS_REPO_DOMAIN/$IMAGE_NAME:$IMAGE_VERSION
 docker push $AWS_ECS_REPO_DOMAIN/$IMAGE_NAME:$IMAGE_VERSION
 aws ecs register-task-definition --cli-input-json file://task-definition.json --region $AWS_DEFAULT_REGION > /dev/null # Create a new task revision
 TASK_REVISION=$(aws ecs describe-task-definition --task-definition $ECS_TASK --region $AWS_DEFAULT_REGION | jq '.taskDefinition.revision') #get latest revision
