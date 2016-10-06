@@ -10,7 +10,7 @@
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": 5001,
+                    "containerPort": 5000,
                     "hostPort": 5001,
                     "protocol": "tcp"
                 }
