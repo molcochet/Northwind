@@ -1,5 +1,5 @@
 #!/bin/bash
-./set-envs.sh
+source ./set-envs.sh
 
 # Build process
 docker build -t $IMAGE_NAME .
