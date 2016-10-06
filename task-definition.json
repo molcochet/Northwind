@@ -1,6 +1,6 @@
 {
     "family": "__ECS_TASK__",
-    "networkMode": "host",
+    "networkMode": "bridge",
     "containerDefinitions": [
         {
             "image": "__AWS_ECS_REPO_DOMAIN__/__IMAGE_NAME__:__IMAGE_VERSION__",
@@ -11,6 +11,7 @@
             "portMappings": [
                 {
                     "containerPort": 5001,
+                    "hostPort": 5001,
                     "protocol": "tcp"
                 }
             ],
