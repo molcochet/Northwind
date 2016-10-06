@@ -13,7 +13,17 @@
                     "containerPort": 5000,
                     "protocol": "tcp"
                 }
-            ]
+            ],
+            "environment": [
+                {
+                    "name": "VIRTUAL_HOST",
+                    "value": "northwind.layoric.org"
+                },
+                {
+                    "name": "VIRTUAL_PORT",
+                    "value": "5001"
+                }
+            ],
         }
     ]
 }
