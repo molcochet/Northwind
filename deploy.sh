@@ -1,5 +1,5 @@
 #!/bin/bash
-./set-envs.sh
+source ./set-envs.sh
 
 # Update task definition with env values
 sed "s/__ECS_TASK__/$ECS_TASK/g" -i ./task-definition.json
