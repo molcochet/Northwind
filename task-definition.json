@@ -18,7 +18,7 @@
             "environment": [
                 {
                     "name": "VIRTUAL_HOST",
-                    "value": "northwind.layoric.org"
+                    "value": "northwind.netcore.io"
                 },
                 {
                     "name": "VIRTUAL_PORT",
