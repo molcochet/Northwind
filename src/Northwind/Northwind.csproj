@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>Northwind</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Northwind</PackageId>
+    <RuntimeFrameworkVersion>1.0.3</RuntimeFrameworkVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\**\*;web.config">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.ServiceInterface\Northwind.ServiceInterface.csproj" />
+    <ProjectReference Include="..\Northwind.ServiceModel\Northwind.ServiceModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="1.1.0" />
+    <PackageReference Include="ServiceStack.Text.Core" Version="1.0.36" />
+    <PackageReference Include="ServiceStack.Interfaces.Core" Version="1.0.36" />
+    <PackageReference Include="ServiceStack.Client.Core" Version="1.0.36" />
+    <PackageReference Include="ServiceStack.Common.Core" Version="1.0.36" />
+    <PackageReference Include="ServiceStack.Core" Version="1.0.36" />
+    <PackageReference Include="ServiceStack.Redis.Core" Version="1.0.36" />
+    <PackageReference Include="ServiceStack.OrmLite.Core" Version="1.0.36" />
+    <PackageReference Include="ServiceStack.OrmLite.Sqlite.Core" Version="1.0.36" />
+    <PackageReference Include="ServiceStack.Server.Core" Version="1.0.36" />
+    <PackageReference Include="ServiceStack.Admin.Core" Version="1.0.36" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+</Project>

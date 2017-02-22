@@ -14,6 +14,7 @@ using Northwind.ServiceInterface;
 using ServiceStack.Admin;
 using ServiceStack.OrmLite;
 using ServiceStack.Data;
+using ServiceStack.Auth;
 
 namespace Northwind
 {
@@ -57,6 +58,29 @@ namespace Northwind
             Plugins.Add(new AdminFeature());
 
             Plugins.Add(new CorsFeature());
+            //Add auth support
+            Plugins.Add(new AuthFeature(() => new CustomUserSession(),
+                new IAuthProvider[]
+                {
+                    new CredentialsAuthProvider(),              //HTML Form post of UserName/Password credentials
+                    new BasicAuthProvider(),                    //Sign-in with HTTP Basic Auth
+                    new DigestAuthProvider(AppSettings),        //Sign-in with HTTP Digest Auth
+                    new TwitterAuthProvider(AppSettings),       //Sign-in with Twitter
+                    new FacebookAuthProvider(AppSettings),      //Sign-in with Facebook
+                    new GithubAuthProvider(AppSettings),        //Sign-in with GitHub OAuth Provider
+                })
+            {
+                HtmlRedirect = "/",
+                IncludeRegistrationService = true,
+            });
+            //Register the OrmLite repository to store the auth details as they are registered with the system
+            container.Register<IAuthRepository>(c =>
+            new OrmLiteAuthRepository(c.Resolve<IDbConnectionFactory>())
+            {
+                UseDistinctRoleTables = AppSettings.Get("UseDistinctRoleTables", true),
+            });
+            var authRepo = (OrmLiteAuthRepository)container.Resolve<IAuthRepository>();
+            SessionService.ResetUsers(authRepo);
         }
     }
 

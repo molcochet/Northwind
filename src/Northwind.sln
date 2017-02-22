@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Northwind", "Northwind\Northwind.xproj", "{52FE5A01-2BD2-4B5D-BA8C-3E9350A276CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind", "Northwind\Northwind.csproj", "{52FE5A01-2BD2-4B5D-BA8C-3E9350A276CB}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Northwind.ServiceInterface", "Northwind.ServiceInterface\Northwind.ServiceInterface.xproj", "{81DEDD6C-FA7A-4456-9D24-6F93384BB465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.ServiceInterface", "Northwind.ServiceInterface\Northwind.ServiceInterface.csproj", "{81DEDD6C-FA7A-4456-9D24-6F93384BB465}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Northwind.ServiceModel", "Northwind.ServiceModel\Northwind.ServiceModel.xproj", "{A8219848-ABAA-4718-A2C5-B81105E6B1F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.ServiceModel", "Northwind.ServiceModel\Northwind.ServiceModel.csproj", "{A8219848-ABAA-4718-A2C5-B81105E6B1F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
